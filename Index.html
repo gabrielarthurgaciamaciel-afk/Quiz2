@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Disciplina</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <main class="container">
+        <header class="cabecalho">
+            <div>
+                <span class="tag">
+                    
+                </span>
+                <h1>Quiz de <span>Disciplina</span></h1>
+                <p>Teste seus conhecimentos!</p>
+            </div>
+            <div class="icone">Q</div>
+        </header>
+
+        <section id="tela-quiz" class="cartao">
+            <div class="topo">
+                <span id="numero-pergunta"></span>
+                <span id="pontuacao-atual">Pontos: 0</span>
+            </div>
+
+            <div class="trilho">
+                <div id="barra-progresso"></div>
+            </div>
+
+            <h2 id="texto-pergunta"></h2>
+            <div id="alternativas" class="alternativas"></div>
+
+            <p id="feedback" class="feedback"></p>
+
+            <button id="botao-proximo" disabled>
+                Próxima pergunta →
+            </button>
+        </section>
+
+        <section id="tela-resultado" class="cartao resultado" hidden>
+            <div class="icone-resultado">✓</div>
+            <span class="tag">QUIZ FINALIZADO</span>
+            <h2 id="titulo-resultado">Parabéns!</h2>
+            <p id="mensagem-resultado"></p>
+
+            <div class="placar">
+                <strong id="pontuacao-final"></strong>
+                <span>respostas corretas</span>
+            </div>
+
+            <button id="botao-reiniciar">↻ Jogar novamente</button>
+        </section>
+
+        <footer>Continue aprendendo e evoluindo!</footer>
+    </main>
+
+        <script src="js/script.js" defer></script>
+
+</body>
+</html>
